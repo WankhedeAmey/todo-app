@@ -1,32 +1,46 @@
-Todo List with Categories
-   - Features:
-     - Add todos with categories.
-     - Mark todos as completed.
-     - Filter todos by category.
-     - Advanced:
-       - Due dates and priority levels.
-       - Drag-and-drop functionality.
-       - User authentication and backend sync.
-   - Tech Required:
-     - React (Recoil for state management)
-     - React Router
-     - Express.js (Backend)
-     - MongoDB (Database)
-     - JWT Authentication
-     - Axios (HTTP Requests)
+# Todo Application
 
+This Todo application is meticulously crafted using the MERN stack. It offers a comprehensive set of features for managing tasks and user sessions. Below is an overview of its capabilities and the technologies used in both the backend and frontend.
 
+## Features
 
-todo-list-backend/
+- **User Management**: Ability to create users, login, and signup.
+- **Todo Management**: Create, mark todos as completed, filter, and sort todos based on priority, completed status and date created.
+- **User Persistence**: Remembers users and their todos.
+- **Logout**: Secure logout functionality.
 
-	1.	Title: A concise title for each todo item.
-	2.	Description: Allow users to add detailed descriptions for each todo, providing more context or instructions.
-	3.	Tags: Implement tagging or categorization of todos to group them based on different criteria (e.g., work, personal, urgent).
-	4.	Completed Status: Track whether a todo is completed or not. Include functionality to mark todos as complete or incomplete.
-	5.	Due Dates: Enable users to set due dates for todos, helping prioritize tasks based on urgency.
-	6.	Priority Levels: Allow users to assign priority levels (e.g., high, medium, low) to todos to indicate importance.
-this one I will implement for now as a starter backend.
+## Technologies Used
 
-{
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFtZXl3YW4iLCJpYXQiOjE3MjIwMjUwNDgsImV4cCI6MTcyMjAyODY0OH0.fjxdahubxIcInNtEla8i3btS9a32c1mUfYh5ruPuYpQ"
-}
+### Backend
+
+- **Express**: Implemented HTTP server functionality.
+- **Node.js**: Used as the runtime environment for the backend.
+- **MongoDB**: Database for storing user and todo data.
+- **Zod**: Schema validation layer to minimize unnecessary network requests.
+- **Bcrypt**: Used for hashing passwords to enhance security.
+- **JWT (JSON Web Tokens)**: Authentication layer for secure user sessions.
+- **Error Handling Middleware**: Comprehensive error handling for robust application stability.
+- **Modular Approach**: Utilized `.env` files and modular structure for better abstraction and security.
+
+### Frontend
+
+- **React**: Core library for building the user interface.
+- **React Router DOM**: For multi-page client-side routing.
+- **Tailwind CSS**: Styling framework for a consistent look across the UI.
+- **Recoil**: State management library for efficient state handling, using atoms and selectors.
+- **Formik**: Library for managing forms and validation.
+- **Moment.js**: For handling and formatting dates in the application.
+- **Axios**: For data fetching and HTTP requests.
+- **React Hooks**: Utilized `useEffect`, `useState`, and `useRef` for managing component state and side effects.
+- **Error Routing**: Smart error handling by routing errors to a dedicated error page.
+
+## Some Screenshots
+
+### Dashboard
+![dashboard](images/dashboard.png)
+![dashboard_2](images/filteredtodos.png)
+
+### Home, Login, Signup
+![home](images/home.png)
+![login](images/login.png)
+![singup](images/signup.png)
