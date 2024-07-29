@@ -1,0 +1,11 @@
+/* src/tailwind.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+    .backdrop-blur-md {
+      backdrop-filter: blur(8px);
+    }
+  }

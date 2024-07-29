@@ -1,0 +1,16 @@
+/* Neon text effect */
+.neon-text {
+    text-shadow: 0 0 5px currentColor, 0 0 10px currentColor, 0 0 15px currentColor, 0 0 20px currentColor;
+}
+
+/* Neon focus effect */
+.neon-focus:focus {
+    border-color: currentColor;
+    box-shadow: 0 0 5px currentColor, 0 0 10px currentColor, 0 0 15px currentColor, 0 0 20px currentColor;
+    outline: none;
+}
+
+/* Neon button effect */
+.neon-button:hover {
+    box-shadow: 0 0 5px currentColor, 0 0 10px currentColor, 0 0 15px currentColor, 0 0 20px currentColor;
+}
